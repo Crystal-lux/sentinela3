@@ -1,0 +1,22 @@
+body{
+    /* linear-gradient define um fundo degradê, 0deg de baixo pra cima, 90deg da esquerda pra direita /35deg diagonal bem comum e bonito*/
+    background: linear-gradient(135deg, #0d6e, #6ea8fe);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    border-radius: 12px;
+}
+
+h2{
+    font-weight: bold;
+}
+
+.historico{
+    background: #f8f9;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border-left: 5px solid #63ffb6af;
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triagem</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Belleza&display=swap');
+</style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="container2"><h1>Cadastro do funcionário</h1></div>
+
+        <form>
+            <div class="campo">
+                <label>Nome Completo</label>
+                <input type="text" required>
+            </div>
+
+            <div class="linha">
+                <div class="campo">
+                    <label>E-mail</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="campo">
+                    <label>Senha</label>
+                    <input type="password" required>
+                </div>
+            </div>
+
+            <div class="linha">
+                <div class="campo">
+                    <label>Função</label>
+                    <select>
+                        <option selected disabled>Selecione</option>
+                        <option>Segurança</option>
+                        <option>Funcionario da Limpeza</option>
+                        <option>Recepcionista</option>
+                        <option>Técnico de Enfermagem</option>
+                        <option>Enfermeiro</option>
+                        <option>Médico</option>
+                        <option>Administrativos</option>
+                        <option>Outro...</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Especialidade Médica</label>
+
+                    <select>
+                        <option selected disabled>Não nescessário para todos</option>
+                        <option>Sem especialidade</option>
+                        <option>Neurologista</option>
+                        <option>Infectologia</option>
+                        <option>Pediatria</option>
+                        <option>Oftalmologia</option>
+                        <option>Cardiologista</option>
+                        <option>Dentista</option>
+                        <option>Dermatologista</option>
+                    </select>
+                </div>
+            </div>
+
+             <div class="campo">
+                <label>Crachá de Identificação</label>
+                <input type="text" required>
+            </div>
+
+            <button type="submit" class="word"><a href="../index.html">Cadastrar</a></button>
+        </form>
+
+    </div>
+</body>
+</html>

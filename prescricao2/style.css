@@ -1,0 +1,112 @@
+body{
+    background-color: rgba(233, 255, 198, 0.934);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo{
+    background-color: rgba(38, 231, 48, 0.589);
+    color: rgb(0, 0, 0);
+    /* cria um espaço interno */
+    padding: 15px;
+    text-align: center;
+}
+
+.card-box{
+    background-color: rgb(173, 253, 253);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 174, 255, 0.879);
+}
+
+h3{
+    margin-bottom: 15px;
+}
+
+.campo{
+    margin-bottom: 15px;
+}
+
+.campo label{
+    /* faz a fonte de todas as palavras ficar em negrito */
+    font-weight: bold;
+    /* impede que os elementos fiquem lado a lado */
+    display: block;
+    /* espaço entre os elementos */
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    /* faz o input ocupar a tela inteira */
+    width: 100%;
+    padding: 10px;
+    /* largura da linha */
+    border: 1px solid #ccc;
+    /* arredondar o quadrado */
+    border-radius: 6px;
+}
+
+textarea{
+    height: 100px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%; /* Garante que o container ocupe a largura total */
+}
+
+/* O link e o botão secundário agora dividem o espaço meio a meio */
+.link-btn, .btn-secundario {
+    flex: 1; 
+}
+
+/* O botão de salvar agora se estica para preencher a metade dele */
+.btn-salvar {
+    width: 100%; 
+    padding: 12px !important;
+    background-color: rgba(122, 139, 233, 0.452);
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn-secundario {
+    padding: 12px;
+    background-color: rgba(122, 139, 233, 0.452);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 6px;
+}
+
+
+.btn-salvar:hover{
+    background-color: rgb(94, 167,252);;
+}
+
+.btn-secundario:hover {
+    background-color: rgb(94, 167,252);
+}
+
+h1{
+    font-family: 'Allura', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 90px !important;
+     /* Define o degradê */
+  background-image: linear-gradient(to right, #000000 45%, #003c7c 55%) !important;
+  /* Força o recorte do fundo no formato das letras */
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  /* Deixa o texto invisível para o degradê aparecer através dele */
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  margin-bottom: -10px !important;
+}
+
+.slq{
+    text-align: center;
+    font-size: x-large;
+     font-family: "Belleza", sans-serif;
+}

@@ -1,0 +1,113 @@
+/* Reset básico e fontes do VS Code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Fundo escuro padrão do VS Code */
+body {
+    background-color: #ffffff;
+    color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container centralizado (estilo caixas de diálogo do VS Code) */
+.card-container {
+    background-color: #252526;
+    border: 1px solid #3c3c3c;
+    border-radius: 6px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Título em destaque */
+h2 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+/* Texto de instrução */
+p {
+    font-size: 13px;
+    color: #8c8c8c;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/* Grupo de inputs */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Labels pequenas e limpas */
+label {
+    font-size: 12px;
+    color: #cccccc;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Inputs idênticos aos campos de texto do VS Code */
+input[type="email"] {
+    background-color: #3c3c3c;
+    border: 1px solid #3c3c3c;
+    color: #ffffff;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 2px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+/* Borda azul ao focar no campo (Foco padrão do VS Code) */
+input[type="email"]:focus {
+    border-color: #007acc;
+}
+
+/* Botão Azul clicável em toda a sua área */
+.btn-enviar {
+    display: block;
+    width: 100%;
+    background-color: #007acc;
+    color: #ffffff;
+    border: none;
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+/* Efeito de hover no botão */
+.btn-enviar:hover {
+    background-color: #0062a3;
+}
+
+/* Link de voltar para o login */
+.voltar-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #3794ff;
+    text-decoration: none;
+}
+
+.voltar-link:hover {
+    text-decoration: underline;
+}

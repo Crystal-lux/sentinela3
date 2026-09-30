@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Belleza&display=swap');
+</style>
+</head>
+<body>
+    <header class="topo">
+        <h1 id="titulo">Sistema Hospitalar</h1>
+        <p class="subtitulo">Triagem</p>
+    </header>
+
+    <div class="container mt-4">
+        <div class="card-box">
+           
+            <h3>Dados da recepção</h3>
+               
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Nome:</strong> João da Silva</p>
+                    <p><strong>CPF:</strong> 000.000.000-00</p>
+                    <p><strong>Data de Nascimento:</strong> 01/01/1990</p>
+                </div>
+
+                <div class="col-md-6">
+                    <p><strong>Sexo:</strong> Masculino</p>
+                    <p><strong>Telefone:</strong> (61) 99999-9999</p>
+                    <p><strong>Convênio:</strong> SUS</p>
+                </div>
+            </div>
+        </div>
+     
+        <div class="row">
+            <div class="col-md-7">
+                <!--card é o quadrado branco p-4 Padding (espaço interno) shadow adiciona sombras form label deixa o texto com padrão de bootstrap col-md-7 faz ela ocupar 7 espaços de 12 -->
+                <div class="card p-4 shadow">
+                    <h5 class="mb-3">Informações de cadastro</h5>
+                    <form>
+
+                        <div class="mb-3">
+                            <label>Tipo sanguíneo</label>
+                            <select>Selecione o tipo sanguineo
+                                <option>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>AB+</option>
+                                <option>AB-</option>
+                                <option>O+</option>
+                                <option>O-</option>
+                            </select>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Frequência Cardiaca</label>
+                            <input type="text" class="form-control" placeholder="Ex: 80bpm">
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Temperatura</label>
+                            <input type="text" class="form-control" placeholder="Atenção para febre igual ou acima de 39°c">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Pressão arterial</label>
+                            <input type="text" class="form-control" placeholder="Atenção para casos que excedam 180mmHg ou menor que 120mmHg">
+                            <!-- Div de fechamento do mb-3 -->
+                        </div>
+
+                        <div class="row">
+                            
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Alergia</label>
+                                <input type="text" class="form-control" placeholder="Ex: Dipirona, amoxilina e etc">
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class=" mb-3">
+                                <label class="form-label">Sintomas</label>
+                                <input type="text" class="form-control" rows="3">
+                            </div>
+
+                            <div class="mb-3">
+                            <label>Nível de dor</label>
+                    <select>
+                        <option selected disabled>Selecione</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                    </div>
+
+                        <div class="mb-3">
+                            <label>Classificação</label>
+                    <select>
+                        <option selected disabled>Selecione</option>
+                        <option>Vermelho</option>
+                        <option>Amarelo</option>
+                        <option>Azul</option>
+                        <option>Verde</option>
+                        <option>Cinza</option>
+                    </select> 
+
+                </div>
+
+                <div class="mb-3">
+                    <label>Especialidade</label>
+
+                    <select>
+                        <option selected disabled>Selecione</option>
+                        <option>Ortopedia</option>
+                        <option>Infectologia</option>
+                        <option>Pediatria</option>
+                        <option>Oftalmologia</option>
+                    </select>
+
+                    </div>
+
+                         <button class="btn btn-info w-100">
+                           <a href="../prescricao2/index.html"> Encaminhar para o especialista</a>
+                        </button>
+                        </div>
+            </div>        
+            
+                    </form>
+                </div>
+                
+                <div class="col-md-5">
+                <div class="card p-3 shadow mb-3">
+                    <h6>Classificação de risco</h6>
+                        
+                    <div class="alert alert-danger">
+                        Vermelho: Muito Urgente (casos que correm sérios riscos de vida)
+                    </div>
+
+                    <div class="alert alert-warning">
+                        Amarelo: Urgente (casos que correm riscos de vida)
+                    </div>
+
+                    <div class="alert alert-info">
+                        Azul: Moderado Urgente (casos que tem certa seriedade, mas podem esperar)
+                    </div>
+
+                    <div class="alert alert-success">
+                        Verde: Pouco Urgente (casos leves que não correm risco de vida)
+                    </div>
+
+                    <div class="alert alert-secondary">
+                        Cinza: Não urgente (casos que podem esperar)
+                    </div>
+
+                </div>
+
+                <div class="card p-3 shadow">
+            <h6>Avisos</h6>
+            <ul class="mb-0">
+                <li>Registrar possíveis suspeitas observáveis</li>
+                <li>Em casos de febre acima de 39°c, encaminhar para a emergência</li>
+                <li>Sintomas como sangue ou secreções possume prioridade máxima</li>
+                <li>Em casos de dúvida quanto a classificação consultar o supervisor</li>
+                <li>Crianças, idosos e imunosupressores devem ter prioridade</li>
+                <li>Frequências anormais encamunhar para a emergência</li>
+                <li>Em caso de suspeitas de abuso/agressão chamar os seguranças</li>
+            </ul>
+        </div>
+
+    <!-- div de fechamento do class container -->
+    </div>
+</body>
+</html>

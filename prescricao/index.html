@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- container centraliza o conteúdo, mt-5 margem em cima, mb-5 margem embaixo, text-center centraliza o texto, text-muted texto mais claro/cinza -->
+    <div class="container mt-5 mb-5">
+        <div class="text-center mb-4">
+            <h2>Prescrição Médica</h2>
+            <!-- Text muted para deixar mais claro/cinza -->
+            <p class="text-muted">Controle seguro de medicação</p>    
+        </div>
+<!-- row vem de linhas, é pra deixar eles um do lado do outro ou jogar pra baixo-->
+        <div class="row">
+            <div class="col-md-7">
+                <!--card é o quadrado branco p-4 Padding (espaço interno) shadow adiciona sombras form label deixa o texto com padrão de bootstrap col-md-7 faz ela ocupar 7 espaços de 12 -->
+                <div class="card p-4 shadow">
+                    <h5 class="mb-3">Dados da prescrição</h5>
+                    <form>
+
+                        <div class="mb-3">
+                            <label>Data da exposição</label>
+                            <input type="text" class="form-control" placeholder="Período aproximado de contagio e inicio dos sintomas">
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Histórico de viagens</label>
+                            <input type="text" class="form-control" placeholder="Atenção aos países tropicais">
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Resultado de exames</label>
+                            <input type="text" class="form-control" placeholder="Atenção a alterações sanguíneas, função renal e carga viral">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Medicamento</label>
+                            <input type="text" class="form-control" placeholder="Ex: Amoxicilina">
+                            <!-- Div de fechamento do mb-3 -->
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Dosagem (mg)</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Frequência</label>
+                                <input type="text" class="form-control" placeholder="Ex:8/8h">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Via de administração</label>
+                                <select class="form-select">
+                                    <option selected disabled>Selecione</option>
+                                    <option>Oral</option>
+                                    <option>Intravenosa</option>
+                                    <option>Intramuscular</option>
+                                    <option>Tópica</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Duração (dias)</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+            </div>         <br>
+                        <div class="card p-4 shadow">
+                            <h5 class="mb-3">Observações finais</h5>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Carga Viral e CD4</label>
+                            <input type="text" class="form-control" placeholder="Pacientes no tratamento de HIV">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Observações Médicas</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div> 
+
+                        <div class="mb-3">
+                            <label class="form-label">Notificação compulsória</label>
+                            <input type="text" class="form-control" placeholder="Aviso aos orgãos de saúde (casos como: Dengue, tuberculose, HIV...)">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Assinatura do Médico</label>
+                            <input type="text" class="form-control" placeholder="Dr. Nome - CRM">
+                        </div>
+                        
+                        <button class="btn btn-info w-100">
+                            Registrar Prescrição
+                        </button>
+                        </div>
+
+                    </form>
+                </div>
+            
+            
+            <div class="col-md-5">
+                <div class="card p-3 shadow mb-3">
+                    <h6>Alertas de Segurança</h6>
+
+                    <div class="alert alert-danger">
+                        Alergia: Antibióticos (penicilina)
+                    </div>
+
+                    <div class="alert alert-warning">
+                        Interação medicamentosa
+                    </div>
+
+                    <div class="alert alert-info">
+                        Possível presença de parasitas
+                    </div>
+
+                    <div class="alert alert-success">
+                        Possível zoonose
+                    </div>
+
+                    <div class="alert alert-secondary">
+                        Possível infecção fungíca
+                    </div>
+
+                </div>
+
+                 <div class="card p-3 shadow">
+            <h6>Regras do Sistema</h6>
+            <ul class="mb-0">
+                <li>Verificar alergias dos pacientes</li>
+                <li>Verificar possível causa dos sintomas</li>
+                <li>Detectar Interações Medicamentosas</li>
+                <li>Validar dose máxima</li>
+                <li>Registrar assinatura médica</li>
+                <li>Manter histórico de Prescrições</li>
+            </ul>
+        </div> <br>
+
+            <div class="card p-3 shadow ">
+                <h6>Campos de controle e alerta</h6>
+                <ul class="mb-0">
+                    <li>Verificar estoque dos medicamentos</li>
+                    <li>Estoque de dispensação</li>
+                    <li>Verificar viagens</li>
+                    <li>Verificar possíveis doenças crônicas</li>
+                    <li>Check-up de orgãos como fígado e rins</li>
+                </ul>
+            </div>
+
+            </div>
+
+            
+        </div>
+
+        <!-- Histórico -->
+
+        <div class="card p-4 shadow mt-4">
+            <h5>Histórico de Prescrições</h5>
+
+            <div class="historico">
+                <strong>Cefalexina 500mg</strong> <br>
+                6/6h | Oral | 14 dias <br>
+                <small>Dr. João - CRM 12345</small>
+            </div>
+
+            <div class="historico">
+                <strong>Cloroquina 400mg</strong> <br>
+                1x ao dia | Oral | 3 dias <br>
+                <small>Dr. Maria - CRM 67890</small>
+            </div>
+
+           
+
+        </div>
+        <!-- div de fechamento do container mt-5 -->
+    </div>    
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgba(177, 231, 241, 0.308);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    margin: 0;
+    background: linear-gradient(135deg, #0d6e, #6ea8fe);
+}
+
+.container{
+    /* altura maxima que esse container vai possuir */
+    max-width: 750px;
+    margin: auto;
+    background-color:rgb(255, 255, 255);
+    /* mexi no padding de 30 pra 20 */
+    padding: 20px;
+    border-radius: 12px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    backdrop-filter: grayscale (100%) !important;
+}
+
+h1{
+    text-align: center;
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: rgb(0, 0, 0);
+}
+
+.campo{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label{
+    /* deixa os elementos um embaixo do outro */
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: black;
+}
+
+input,
+textarea,
+select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid pink;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color: aquamarine;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+.linha{
+    display: flex;
+    gap: 20px;
+}
+
+button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(127, 255, 212, 0.466);
+    color: rgba(0, 0, 0, 0.692);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgb(168, 250, 166);
+}
+
+.container2{
+    background-color: rgba(127, 255, 170, 0.329);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.word{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+}
